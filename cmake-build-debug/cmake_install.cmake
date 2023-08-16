@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/mingw32/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

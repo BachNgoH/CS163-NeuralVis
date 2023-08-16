@@ -12,7 +12,6 @@
 using namespace Eigen;
 using namespace std;
 
-
 class MNISTDataset {
 public:
     int batch_size;
@@ -20,7 +19,7 @@ public:
     int num_lines;
     explicit MNISTDataset(int batch_size) : batch_size(batch_size) {
         data_dir = "../data/train.csv";
-        num_lines = countLines(data_dir);
+        num_lines = countLines(data_dir) / 2;
     };
 
     tuple<MatrixXd, MatrixXd> loadData (int batch_num) {
@@ -83,5 +82,34 @@ public:
     }
 };
 
+class utils {
+public:
+    static void drawLine(RenderWindow &window, sf::Vector2f point1, sf::Vector2f point2,
+                         sf::Color fillColor, sf::Color fillColor2, double hightLightPercent) {
+        float lineWidth = 1.0f;  // Width of the line
+
+        sf::Vector2f direction = point2 - point1;
+        float length = std::sqrt(direction.x * direction.x + direction.y * direction.y);
+        float angle = std::atan2(direction.y, direction.x) * 180 / 3.14159265f;
+
+        sf::RectangleShape rectangle1;
+        rectangle1.setSize(sf::Vector2f(length * hightLightPercent, lineWidth));
+        rectangle1.setPosition(point1);
+        rectangle1.setOrigin(0, lineWidth * hightLightPercent);
+        rectangle1.setFillColor(fillColor2);
+        rectangle1.setRotation(angle);
+
+        sf::RectangleShape rectangle2;
+        rectangle2.setSize(sf::Vector2f(length * hightLightPercent, lineWidth));
+        rectangle2.setPosition(point2);
+        rectangle2.setOrigin(0, lineWidth * (1- hightLightPercent));
+        rectangle2.setFillColor(fillColor);
+        rectangle2.setRotation(angle+180);
+
+        window.draw(rectangle1);
+        window.draw(rectangle2);
+
+    }
+};
 
 #endif //NEURALVISUALIZER_UTILS_H

@@ -1,14 +1,16 @@
 //
 // Created by LENOVO on 7/19/2023.
 //
+#pragma once
 
 #ifndef NEURALVISUALIZER_MLP_H
 #define NEURALVISUALIZER_MLP_H
-
+#include <fstream>
+#include <iostream>
 #include "../Eigen/Dense"
+#include <utility>
 #include <vector>
 using namespace Eigen;
-using namespace std;
 
 namespace  nn {
     inline auto sigmoid(MatrixXd &x){
@@ -28,19 +30,6 @@ namespace  nn {
         return res;
     }
 
-    double crossEntropyLoss(MatrixXd y_hat, MatrixXd y){
-        double loss = 0.0;
-        for(int i = 0; i < y.cols(); i++) {
-            for(int j = 0; j < y.rows(); j++){
-                if(y(j, i) == 1.0)
-                    loss += -log(y_hat(j, i));
-                else if(y(j, i) != 0.0)
-                    throw std::runtime_error("True probabilities should be either 0 or 1.");
-            }
-        }
-        return loss;
-    }
-
     inline auto softmax(MatrixXd x){
         MatrixXd res(x.rows(), x.cols());
         for(int i = 0; i < x.cols(); i++){
@@ -56,19 +45,54 @@ namespace  nn {
 
     class MLP {
     public:
-        vector<int> units_per_layer;
-        vector<MatrixXd> bias;
-        vector<MatrixXd> weights;
-        vector<MatrixXd> activations;
+        std::vector<int> units_per_layer;
+        std::vector<MatrixXd> bias;
+        std::vector<MatrixXd> weights;
+        std::vector<MatrixXd> activations;
+        std::vector<MatrixXd> gradient;
+
         float lr;
 
-        explicit MLP(vector<int> units_per_layer, float lr=.001f) :
+        MLP(): units_per_layer(), weights(), bias(), activations(), lr() {}
+        MLP(std::vector<int> units_per_layer, float lr=.001f) :
             units_per_layer(units_per_layer),
             weights(),
             bias(),
             activations(),
             lr(lr) {
 
+            for(size_t i = 0; i < units_per_layer.size() - 1; i++){
+                int in_channels = units_per_layer[i];
+                int out_channels = units_per_layer[i+1];
+
+                auto w = MatrixXd::Random(out_channels, in_channels);
+                weights.push_back(w);
+
+                auto b = MatrixXd::Random(out_channels, 1);
+                bias.push_back(b);
+
+                activations.resize(units_per_layer.size());
+            }
+        }
+
+        double crossEntropyLoss(MatrixXd y_hat, MatrixXd y){
+            double loss = 0.0;
+            for(int i = 0; i < y.cols(); i++) {
+                for(int j = 0; j < y.rows(); j++){
+                    if(y(j, i) == 1.0)
+                        loss += -log(y_hat(j, i));
+                    else if(y(j, i) != 0.0)
+                        throw std::runtime_error("True probabilities should be either 0 or 1.");
+                }
+            }
+            return loss;
+        }
+
+        auto init_model(std::vector<int> units_per_layer, float lr=.001f){
+            this->units_per_layer = units_per_layer;
+            weights.clear();
+            bias.clear();
+            this->lr = lr;
             for(size_t i = 0; i < units_per_layer.size() - 1; i++){
                 int in_channels = units_per_layer[i];
                 int out_channels = units_per_layer[i+1];
@@ -102,6 +126,7 @@ namespace  nn {
             MatrixXd y_hat = activations.back();
             MatrixXd error = target - y_hat;
             double loss = crossEntropyLoss(y_hat, target);
+            gradient.resize(weights.size());
             for (int i = weights.size() - 1; i >= 0; i--){
                 auto Wt = weights[i].transpose();
 
@@ -112,6 +137,7 @@ namespace  nn {
                 gradients = gradients * lr;
                 MatrixXd a_trans = activations[i].transpose();
                 MatrixXd weight_gradients = gradients * a_trans;
+                gradient[i] = weight_gradients;
 
                 for(int k = 0; k < gradients.cols(); k++)
                     bias[i] = bias[i] + gradients.col(k);
@@ -121,13 +147,12 @@ namespace  nn {
             return loss;
         }
 
-        void save_weights(const string& filename) {
+        void save_weights(const std::string& filename) {
             std::ofstream file(filename, std::ios::binary);
             if (!file.is_open()) {
                 std::cerr << "Error opening file for writing: " << filename << std::endl;
                 return;
             }
-
             for (size_t i = 0; i < weights.size(); i++) {
                 file.write((char*)weights[i].data(), sizeof(double) * weights[i].size());
             }
@@ -148,13 +173,13 @@ namespace  nn {
             }
 
             for (size_t i = 0; i < weights.size(); i++) {
-                file.read((char*)weights[i].data(), sizeof(double) * weights[i].size());
+                file.read((char *) weights[i].data(), sizeof(double) * weights[i].size());
             }
 
             for (size_t i = 0; i < bias.size(); i++) {
                 file.read((char*)bias[i].data(), sizeof(double) * bias[i].size());
             }
-
+            std::cout << "LOAD MODEL SUCCESSFULLY" << std::endl;
             file.close();
         }
     };

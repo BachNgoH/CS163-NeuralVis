@@ -15,10 +15,10 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/mingw32/bin/addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/ar.exe
+CMAKE_AR:FILEPATH=C:/mingw32/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -28,15 +28,15 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/g++.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/mingw32/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/gcc-ar.exe
+CMAKE_CXX_COMPILER_AR:FILEPATH=C:/mingw32/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/gcc-ranlib.exe
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/mingw32/bin/gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -57,15 +57,15 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/gcc.exe
+CMAKE_C_COMPILER:FILEPATH=C:/mingw32/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/gcc-ar.exe
+CMAKE_C_COMPILER_AR:FILEPATH=C:/mingw32/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/gcc-ranlib.exe
+CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/mingw32/bin/gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -86,7 +86,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/dlltool.exe
+CMAKE_DLLTOOL:FILEPATH=C:/mingw32/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -116,7 +116,7 @@ CMAKE_GNUtoMS:BOOL=OFF
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/NeuralVisualizer
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/ld.exe
+CMAKE_LINKER:FILEPATH=C:/mingw32/bin/ld.exe
 
 //No help, variable specified on the command line.
 CMAKE_MAKE_PROGRAM:UNINITIALIZED=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/ninja/win/x64/ninja.exe
@@ -142,13 +142,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/nm.exe
+CMAKE_NM:FILEPATH=C:/mingw32/bin/nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/mingw32/bin/objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/mingw32/bin/objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -160,10 +160,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=NeuralVisualizer
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/ranlib.exe
+CMAKE_RANLIB:FILEPATH=C:/mingw32/bin/ranlib.exe
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/windres.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/mingw32/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=
@@ -181,7 +181,7 @@ CMAKE_RC_FLAGS_RELEASE:STRING=
 CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/readelf.exe
+CMAKE_READELF:FILEPATH=C:/mingw32/bin/readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -231,13 +231,19 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/Users/LENOVO/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/strip.exe
+CMAKE_STRIP:FILEPATH=C:/mingw32/bin/strip.exe
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Path to a library.
+FLAC_LIB:FILEPATH=C:/SFML/lib/libFLAC.a
+
+//Path to a library.
+FreeType_LIB:FILEPATH=C:/SFML/lib/libfreetype.a
 
 //Value Computed by CMake
 NeuralVisualizer_BINARY_DIR:STATIC=C:/Users/LENOVO/studying/Year1/Semester 3/cs163/NeuralVisualizer/cmake-build-debug
@@ -247,6 +253,138 @@ NeuralVisualizer_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 NeuralVisualizer_SOURCE_DIR:STATIC=C:/Users/LENOVO/studying/Year1/Semester 3/cs163/NeuralVisualizer
+
+//Path to a library.
+Ogg_LIB:FILEPATH=C:/SFML/lib/libogg.a
+
+//Path to a library.
+OpenAL_LIB:FILEPATH=C:/SFML/lib/libopenal32.a
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/mingw64/bin/pkg-config.exe
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
+//Path to a library.
+VorbisEnc_LIB:FILEPATH=C:/SFML/lib/libvorbisenc.a
+
+//Path to a library.
+VorbisFile_LIB:FILEPATH=C:/SFML/lib/libvorbisfile.a
+
+//Path to a library.
+Vorbis_LIB:FILEPATH=C:/SFML/lib/libvorbis.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_atk-1.0:FILEPATH=C:/msys64/mingw64/lib/libatk-1.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_atkmm-1.6:FILEPATH=C:/msys64/mingw64/lib/libatkmm-1.6.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairo:FILEPATH=C:/msys64/mingw64/lib/libcairo.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairo-gobject:FILEPATH=C:/msys64/mingw64/lib/libcairo-gobject.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cairomm-1.0:FILEPATH=C:/msys64/mingw64/lib/libcairomm-1.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_cfgmgr32:FILEPATH=pkgcfg_lib_GTKMM_cfgmgr32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_comctl32:FILEPATH=pkgcfg_lib_GTKMM_comctl32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_comdlg32:FILEPATH=pkgcfg_lib_GTKMM_comdlg32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_dwmapi:FILEPATH=pkgcfg_lib_GTKMM_dwmapi-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdi32:FILEPATH=pkgcfg_lib_GTKMM_gdi32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdk-3:FILEPATH=C:/msys64/mingw64/lib/libgdk-3.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdk_pixbuf-2.0:FILEPATH=C:/msys64/mingw64/lib/libgdk_pixbuf-2.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gdkmm-3.0:FILEPATH=C:/msys64/mingw64/lib/libgdkmm-3.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gio-2.0:FILEPATH=C:/msys64/mingw64/lib/libgio-2.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_giomm-2.4:FILEPATH=C:/msys64/mingw64/lib/libgiomm-2.4.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_glib-2.0:FILEPATH=C:/msys64/mingw64/lib/libglib-2.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_glibmm-2.4:FILEPATH=C:/msys64/mingw64/lib/libglibmm-2.4.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gobject-2.0:FILEPATH=C:/msys64/mingw64/lib/libgobject-2.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gtk-3:FILEPATH=C:/msys64/mingw64/lib/libgtk-3.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_gtkmm-3.0:FILEPATH=C:/msys64/mingw64/lib/libgtkmm-3.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_harfbuzz:FILEPATH=C:/msys64/mingw64/lib/libharfbuzz.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_hid:FILEPATH=pkgcfg_lib_GTKMM_hid-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_imm32:FILEPATH=pkgcfg_lib_GTKMM_imm32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_intl:FILEPATH=C:/msys64/mingw64/lib/libintl.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_ole32:FILEPATH=pkgcfg_lib_GTKMM_ole32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pango-1.0:FILEPATH=C:/msys64/mingw64/lib/libpango-1.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pangocairo-1.0:FILEPATH=C:/msys64/mingw64/lib/libpangocairo-1.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pangomm-1.4:FILEPATH=C:/msys64/mingw64/lib/libpangomm-1.4.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_pangowin32-1.0:FILEPATH=C:/msys64/mingw64/lib/libpangowin32-1.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_setupapi:FILEPATH=pkgcfg_lib_GTKMM_setupapi-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_shell32:FILEPATH=pkgcfg_lib_GTKMM_shell32-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_sigc-2.0:FILEPATH=C:/msys64/mingw64/lib/libsigc-2.0.dll.a
+
+//Path to a library.
+pkgcfg_lib_GTKMM_uuid:FILEPATH=pkgcfg_lib_GTKMM_uuid-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_winmm:FILEPATH=pkgcfg_lib_GTKMM_winmm-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_winspool:FILEPATH=pkgcfg_lib_GTKMM_winspool-NOTFOUND
+
+//Path to a library.
+pkgcfg_lib_GTKMM_z:FILEPATH=C:/msys64/mingw64/lib/libz.dll.a
 
 
 ########################
@@ -405,6 +543,136 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[C:/msys64/mingw64/bin/pkg-config.exe][v0.29.2()]
+//ADVANCED property for variable: FLAC_LIB
+FLAC_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FreeType_LIB
+FreeType_LIB-ADVANCED:INTERNAL=1
+GTKMM_CFLAGS:INTERNAL=-DLIBDEFLATE_DLL;-IC:/msys64/mingw64/include/gtkmm-3.0;-IC:/msys64/mingw64/lib/gtkmm-3.0/include;-IC:/msys64/mingw64/include/atkmm-1.6;-IC:/msys64/mingw64/lib/atkmm-1.6/include;-IC:/msys64/mingw64/include/gdkmm-3.0;-IC:/msys64/mingw64/lib/gdkmm-3.0/include;-IC:/msys64/mingw64/include/giomm-2.4;-IC:/msys64/mingw64/lib/giomm-2.4/include;-IC:/msys64/mingw64/include/gtk-3.0;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/atk-1.0;-IC:/msys64/mingw64/include/cairo;-IC:/msys64/mingw64/include/pangomm-1.4;-IC:/msys64/mingw64/lib/pangomm-1.4/include;-IC:/msys64/mingw64/include/glibmm-2.4;-IC:/msys64/mingw64/lib/glibmm-2.4/include;-IC:/msys64/mingw64/include/cairomm-1.0;-IC:/msys64/mingw64/lib/cairomm-1.0/include;-IC:/msys64/mingw64/include/sigc++-2.0;-IC:/msys64/mingw64/lib/sigc++-2.0/include;-IC:/msys64/mingw64/include/pango-1.0;-IC:/msys64/mingw64/include/harfbuzz;-IC:/msys64/mingw64/include/pango-1.0;-IC:/msys64/mingw64/include/fribidi;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/cairo;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/freetype2;-IC:/msys64/mingw64/include/harfbuzz;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/pixman-1;-IC:/msys64/mingw64/include/gdk-pixbuf-2.0;-IC:/msys64/mingw64/include/libpng16;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/webp;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/glib-2.0;-IC:/msys64/mingw64/lib/glib-2.0/include;-IC:/msys64/mingw64/include
+GTKMM_CFLAGS_I:INTERNAL=
+GTKMM_CFLAGS_OTHER:INTERNAL=-DLIBDEFLATE_DLL
+GTKMM_FOUND:INTERNAL=1
+GTKMM_INCLUDEDIR:INTERNAL=C:/msys64/mingw64/include
+GTKMM_INCLUDE_DIRS:INTERNAL=C:/msys64/mingw64/include/gtkmm-3.0;C:/msys64/mingw64/lib/gtkmm-3.0/include;C:/msys64/mingw64/include/atkmm-1.6;C:/msys64/mingw64/lib/atkmm-1.6/include;C:/msys64/mingw64/include/gdkmm-3.0;C:/msys64/mingw64/lib/gdkmm-3.0/include;C:/msys64/mingw64/include/giomm-2.4;C:/msys64/mingw64/lib/giomm-2.4/include;C:/msys64/mingw64/include/gtk-3.0;C:/msys64/mingw64/include;C:/msys64/mingw64/include/atk-1.0;C:/msys64/mingw64/include/cairo;C:/msys64/mingw64/include/pangomm-1.4;C:/msys64/mingw64/lib/pangomm-1.4/include;C:/msys64/mingw64/include/glibmm-2.4;C:/msys64/mingw64/lib/glibmm-2.4/include;C:/msys64/mingw64/include/cairomm-1.0;C:/msys64/mingw64/lib/cairomm-1.0/include;C:/msys64/mingw64/include/sigc++-2.0;C:/msys64/mingw64/lib/sigc++-2.0/include;C:/msys64/mingw64/include/pango-1.0;C:/msys64/mingw64/include/harfbuzz;C:/msys64/mingw64/include/pango-1.0;C:/msys64/mingw64/include/fribidi;C:/msys64/mingw64/include;C:/msys64/mingw64/include/cairo;C:/msys64/mingw64/include;C:/msys64/mingw64/include/freetype2;C:/msys64/mingw64/include/harfbuzz;C:/msys64/mingw64/include;C:/msys64/mingw64/include/pixman-1;C:/msys64/mingw64/include/gdk-pixbuf-2.0;C:/msys64/mingw64/include/libpng16;C:/msys64/mingw64/include;C:/msys64/mingw64/include/webp;C:/msys64/mingw64/include;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;C:/msys64/mingw64/include
+GTKMM_LDFLAGS:INTERNAL=-LC:/msys64/mingw64/lib;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-lgdk-3;-lz;-lgdi32;-limm32;-lshell32;-lole32;-luuid;-lwinmm;-ldwmapi;-lsetupapi;-lcfgmgr32;-lhid;-lwinspool;-lcomctl32;-lcomdlg32;-lpangowin32-1.0;-latk-1.0;-lcairo-gobject;-lgio-2.0;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lpango-1.0;-lharfbuzz;-lcairo;-lgdk_pixbuf-2.0;-lgobject-2.0;-lglib-2.0;-lintl
+GTKMM_LDFLAGS_OTHER:INTERNAL=
+GTKMM_LIBDIR:INTERNAL=C:/msys64/mingw64/lib
+GTKMM_LIBRARIES:INTERNAL=gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;gdk-3;z;gdi32;imm32;shell32;ole32;uuid;winmm;dwmapi;setupapi;cfgmgr32;hid;winspool;comctl32;comdlg32;pangowin32-1.0;atk-1.0;cairo-gobject;gio-2.0;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;pango-1.0;harfbuzz;cairo;gdk_pixbuf-2.0;gobject-2.0;glib-2.0;intl
+GTKMM_LIBRARY_DIRS:INTERNAL=C:/msys64/mingw64/lib
+GTKMM_LIBS:INTERNAL=
+GTKMM_LIBS_L:INTERNAL=
+GTKMM_LIBS_OTHER:INTERNAL=
+GTKMM_LIBS_PATHS:INTERNAL=
+GTKMM_MODULE_NAME:INTERNAL=gtkmm-3.0
+GTKMM_PREFIX:INTERNAL=C:/msys64/mingw64
+GTKMM_STATIC_CFLAGS:INTERNAL=-DLIBDEFLATE_DLL;-IC:/msys64/mingw64/include/gtkmm-3.0;-IC:/msys64/mingw64/lib/gtkmm-3.0/include;-IC:/msys64/mingw64/include/atkmm-1.6;-IC:/msys64/mingw64/lib/atkmm-1.6/include;-IC:/msys64/mingw64/include/gdkmm-3.0;-IC:/msys64/mingw64/lib/gdkmm-3.0/include;-IC:/msys64/mingw64/include/giomm-2.4;-IC:/msys64/mingw64/lib/giomm-2.4/include;-IC:/msys64/mingw64/include/gtk-3.0;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/atk-1.0;-IC:/msys64/mingw64/include/cairo;-IC:/msys64/mingw64/include/pangomm-1.4;-IC:/msys64/mingw64/lib/pangomm-1.4/include;-IC:/msys64/mingw64/include/glibmm-2.4;-IC:/msys64/mingw64/lib/glibmm-2.4/include;-IC:/msys64/mingw64/include/cairomm-1.0;-IC:/msys64/mingw64/lib/cairomm-1.0/include;-IC:/msys64/mingw64/include/sigc++-2.0;-IC:/msys64/mingw64/lib/sigc++-2.0/include;-IC:/msys64/mingw64/include/pango-1.0;-IC:/msys64/mingw64/include/harfbuzz;-IC:/msys64/mingw64/include/pango-1.0;-IC:/msys64/mingw64/include/fribidi;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/cairo;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/freetype2;-IC:/msys64/mingw64/include/harfbuzz;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/pixman-1;-IC:/msys64/mingw64/include/gdk-pixbuf-2.0;-IC:/msys64/mingw64/include/libpng16;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/webp;-IC:/msys64/mingw64/include;-IC:/msys64/mingw64/include/glib-2.0;-IC:/msys64/mingw64/lib/glib-2.0/include;-IC:/msys64/mingw64/include
+GTKMM_STATIC_CFLAGS_I:INTERNAL=
+GTKMM_STATIC_CFLAGS_OTHER:INTERNAL=-DLIBDEFLATE_DLL
+GTKMM_STATIC_INCLUDE_DIRS:INTERNAL=C:/msys64/mingw64/include/gtkmm-3.0;C:/msys64/mingw64/lib/gtkmm-3.0/include;C:/msys64/mingw64/include/atkmm-1.6;C:/msys64/mingw64/lib/atkmm-1.6/include;C:/msys64/mingw64/include/gdkmm-3.0;C:/msys64/mingw64/lib/gdkmm-3.0/include;C:/msys64/mingw64/include/giomm-2.4;C:/msys64/mingw64/lib/giomm-2.4/include;C:/msys64/mingw64/include/gtk-3.0;C:/msys64/mingw64/include;C:/msys64/mingw64/include/atk-1.0;C:/msys64/mingw64/include/cairo;C:/msys64/mingw64/include/pangomm-1.4;C:/msys64/mingw64/lib/pangomm-1.4/include;C:/msys64/mingw64/include/glibmm-2.4;C:/msys64/mingw64/lib/glibmm-2.4/include;C:/msys64/mingw64/include/cairomm-1.0;C:/msys64/mingw64/lib/cairomm-1.0/include;C:/msys64/mingw64/include/sigc++-2.0;C:/msys64/mingw64/lib/sigc++-2.0/include;C:/msys64/mingw64/include/pango-1.0;C:/msys64/mingw64/include/harfbuzz;C:/msys64/mingw64/include/pango-1.0;C:/msys64/mingw64/include/fribidi;C:/msys64/mingw64/include;C:/msys64/mingw64/include/cairo;C:/msys64/mingw64/include;C:/msys64/mingw64/include/freetype2;C:/msys64/mingw64/include/harfbuzz;C:/msys64/mingw64/include;C:/msys64/mingw64/include/pixman-1;C:/msys64/mingw64/include/gdk-pixbuf-2.0;C:/msys64/mingw64/include/libpng16;C:/msys64/mingw64/include;C:/msys64/mingw64/include/webp;C:/msys64/mingw64/include;C:/msys64/mingw64/include/glib-2.0;C:/msys64/mingw64/lib/glib-2.0/include;C:/msys64/mingw64/include
+GTKMM_STATIC_LDFLAGS:INTERNAL=-LC:/msys64/mingw64/lib;-LC:/msys64/mingw64/lib/../lib;-LC:/msys64/mingw64/lib;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-lgdk-3;-lz;-lgdi32;-limm32;-lshell32;-lole32;-luuid;-lwinmm;-ldwmapi;-lsetupapi;-lcfgmgr32;-lhid;-lwinspool;-lcomctl32;-lcomdlg32;-lgdi32;-lmsimg32;-lepoxy;-lopengl32;-lgdi32;-latk-1.0;-lcairo-gobject;-lm;-lgdi32;-lmsimg32;-ldwrite;-ld2d1;-lwindowscodecs;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lm;-lgdi32;-lpangoft2-1.0;-lm;-lpangowin32-1.0;-lm;-lgdi32;-ldwrite;-lharfbuzz-gobject;-lpango-1.0;-lm;-lfribidi;-lthai;-ldatrie;-lcairo;-lm;-lgdi32;-lmsimg32;-ldwrite;-ld2d1;-lwindowscodecs;-lfontconfig;-liconv;-lexpat;-lm;-lfreetype;-lbz2;-lharfbuzz;-lm;-lusp10;-lgdi32;-lrpcrt4;-lgraphite2;-lbrotlidec;-lbrotlicommon;-lpixman-1;-lm;-pthread;-lgdk_pixbuf-2.0;-lm;-lintl;-lgdiplus;-lole32;-lpng16;-lz;-ltiff;-lwebp;-lzstd;-llzma;-lLerc;-ljbig;-ljpeg;-ldeflate;-lz;-lwebp;-lsharpyuv;-lzstd;-llzma;-ljpeg;-ldeflate;-lgio-2.0;-lintl;-lshlwapi;-ldnsapi;-liphlpapi;-lws2_32;-lgmodule-2.0;-lintl;-lz;-lgobject-2.0;-lintl;-lffi;-lglib-2.0;-lintl;-lws2_32;-lole32;-lwinmm;-lshlwapi;-luuid;-lm;-lpcre2-8
+GTKMM_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+GTKMM_STATIC_LIBDIR:INTERNAL=
+GTKMM_STATIC_LIBRARIES:INTERNAL=gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;gdk-3;z;gdi32;imm32;shell32;ole32;uuid;winmm;dwmapi;setupapi;cfgmgr32;hid;winspool;comctl32;comdlg32;gdi32;msimg32;epoxy;opengl32;gdi32;atk-1.0;cairo-gobject;m;gdi32;msimg32;dwrite;d2d1;windowscodecs;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;m;gdi32;pangoft2-1.0;m;pangowin32-1.0;m;gdi32;dwrite;harfbuzz-gobject;pango-1.0;m;fribidi;thai;datrie;cairo;m;gdi32;msimg32;dwrite;d2d1;windowscodecs;fontconfig;iconv;expat;m;freetype;bz2;harfbuzz;m;usp10;gdi32;rpcrt4;graphite2;brotlidec;brotlicommon;pixman-1;m;gdk_pixbuf-2.0;m;intl;gdiplus;ole32;png16;z;tiff;webp;zstd;lzma;Lerc;jbig;jpeg;deflate;z;webp;sharpyuv;zstd;lzma;jpeg;deflate;gio-2.0;intl;shlwapi;dnsapi;iphlpapi;ws2_32;gmodule-2.0;intl;z;gobject-2.0;intl;ffi;glib-2.0;intl;ws2_32;ole32;winmm;shlwapi;uuid;m;pcre2-8
+GTKMM_STATIC_LIBRARY_DIRS:INTERNAL=C:/msys64/mingw64/lib;C:/msys64/mingw64/lib/../lib;C:/msys64/mingw64/lib
+GTKMM_STATIC_LIBS:INTERNAL=
+GTKMM_STATIC_LIBS_L:INTERNAL=
+GTKMM_STATIC_LIBS_OTHER:INTERNAL=
+GTKMM_STATIC_LIBS_PATHS:INTERNAL=
+GTKMM_VERSION:INTERNAL=3.24.7
+GTKMM_gtkmm-3.0_INCLUDEDIR:INTERNAL=
+GTKMM_gtkmm-3.0_LIBDIR:INTERNAL=
+GTKMM_gtkmm-3.0_PREFIX:INTERNAL=
+GTKMM_gtkmm-3.0_VERSION:INTERNAL=
+//ADVANCED property for variable: Ogg_LIB
+Ogg_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenAL_LIB
+OpenAL_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VorbisEnc_LIB
+VorbisEnc_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VorbisFile_LIB
+VorbisFile_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Vorbis_LIB
+Vorbis_LIB-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_GTKMM:INTERNAL=gtkmm-3.0
+__pkg_config_checked_GTKMM:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_atk-1.0
+pkgcfg_lib_GTKMM_atk-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_atkmm-1.6
+pkgcfg_lib_GTKMM_atkmm-1.6-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo
+pkgcfg_lib_GTKMM_cairo-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairo-gobject
+pkgcfg_lib_GTKMM_cairo-gobject-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cairomm-1.0
+pkgcfg_lib_GTKMM_cairomm-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_cfgmgr32
+pkgcfg_lib_GTKMM_cfgmgr32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_comctl32
+pkgcfg_lib_GTKMM_comctl32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_comdlg32
+pkgcfg_lib_GTKMM_comdlg32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_dwmapi
+pkgcfg_lib_GTKMM_dwmapi-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdi32
+pkgcfg_lib_GTKMM_gdi32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk-3
+pkgcfg_lib_GTKMM_gdk-3-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdk_pixbuf-2.0
+pkgcfg_lib_GTKMM_gdk_pixbuf-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gdkmm-3.0
+pkgcfg_lib_GTKMM_gdkmm-3.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gio-2.0
+pkgcfg_lib_GTKMM_gio-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_giomm-2.4
+pkgcfg_lib_GTKMM_giomm-2.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_glib-2.0
+pkgcfg_lib_GTKMM_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_glibmm-2.4
+pkgcfg_lib_GTKMM_glibmm-2.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gobject-2.0
+pkgcfg_lib_GTKMM_gobject-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtk-3
+pkgcfg_lib_GTKMM_gtk-3-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_gtkmm-3.0
+pkgcfg_lib_GTKMM_gtkmm-3.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_harfbuzz
+pkgcfg_lib_GTKMM_harfbuzz-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_hid
+pkgcfg_lib_GTKMM_hid-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_imm32
+pkgcfg_lib_GTKMM_imm32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_intl
+pkgcfg_lib_GTKMM_intl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_ole32
+pkgcfg_lib_GTKMM_ole32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pango-1.0
+pkgcfg_lib_GTKMM_pango-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangocairo-1.0
+pkgcfg_lib_GTKMM_pangocairo-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangomm-1.4
+pkgcfg_lib_GTKMM_pangomm-1.4-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_pangowin32-1.0
+pkgcfg_lib_GTKMM_pangowin32-1.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_setupapi
+pkgcfg_lib_GTKMM_setupapi-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_shell32
+pkgcfg_lib_GTKMM_shell32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_sigc-2.0
+pkgcfg_lib_GTKMM_sigc-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_uuid
+pkgcfg_lib_GTKMM_uuid-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_winmm
+pkgcfg_lib_GTKMM_winmm-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_winspool
+pkgcfg_lib_GTKMM_winspool-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GTKMM_z
+pkgcfg_lib_GTKMM_z-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=C:/msys64/mingw64/lib
 
