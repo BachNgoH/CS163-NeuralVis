@@ -11,4 +11,4 @@ Welcome to the Neural Network Visualization project! This project aims to provid
 
 ## Demo Video
 
-\href{demo video}{https://www.youtube.com/watch?v=At0o1G5oF_4}
+https://www.youtube.com/watch?v=At0o1G5oF_4
